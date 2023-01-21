@@ -33,4 +33,4 @@ print(foo)
 del foo
 
 # should produce NameError
-print(foo.first_name)
+# print(foo.first_name)
