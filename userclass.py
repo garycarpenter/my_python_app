@@ -18,6 +18,19 @@ class UserClass(object):
         print(self.user_type)
 
     def __del__(self):
-        print("You have deleted user. ")
+        print("User deleted.")
+        print(self.first_name)
+
+
+foo = UserClass('Foo', 'Bar', 'foo@bar.io', 'admin')
+
+foo.display_user()
 
 print('Hello World!')
+
+print(foo)
+
+del foo
+
+# should produce NameError
+print(foo.first_name)
